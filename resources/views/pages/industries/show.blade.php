@@ -22,7 +22,7 @@
              style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
         <x-ui.container>
             <div class="max-w-4xl mx-auto prose prose-steel leading-relaxed mb-20 text-steel-650" data-reveal="fade-up">
-                {!! nl2br(e($industry->full_description)) !!}
+                {!! $industry->full_description !!}
             </div>
 
             <div class="mb-12 text-center" data-reveal="fade-up">

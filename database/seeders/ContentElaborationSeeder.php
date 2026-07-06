@@ -102,7 +102,7 @@ class ContentElaborationSeeder extends Seeder
             $short = "Industrial-grade {$name} designed for continuous operation, high efficiency, and uncompromising product quality.";
 
             $full = "
-                <p>The <strong>{$name}</strong> represents DO-RYT\'s commitment to engineering excellence. Designed for demanding industrial environments, this system provides unparalleled reliability and performance.</p>
+                <p>The <strong>{$name}</strong> represents DO-RYT's commitment to engineering excellence. Designed for demanding industrial environments, this system provides unparalleled reliability and performance.</p>
                 <p>Constructed from high-grade stainless steel (SS-304/SS-316L), the equipment features advanced PLC-based control systems, allowing operators to monitor and adjust critical parameters in real-time. The ergonomic design ensures ease of maintenance and adherence to strict Clean-In-Place (CIP) protocols.</p>
                 <p>By optimizing energy consumption and maximizing throughput, the {$name} delivers a rapid return on investment while elevating your production capabilities to global standards.</p>
             ";

@@ -126,7 +126,7 @@
                         </div>
                         
                         <div class="prose prose-steel max-w-none text-steel-650 leading-relaxed text-sm">
-                            {!! nl2br(e($product->full_description)) !!}
+                            {!! $product->full_description !!}
                         </div>
                     </div>
 
