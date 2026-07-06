@@ -151,7 +151,7 @@
                     @endif
 
                     @if($product->technical_specifications && is_array($product->technical_specifications) && count($product->technical_specifications) > 0)
-                    <div class="bg-white border border-steel-200 p-8 md:p-12">
+                    <div class="bg-white border border-steel-200 p-8 md:p-12 mb-12">
                         <div class="flex justify-between items-center mb-8 border-b border-steel-200 pb-6">
                             <h3 class="text-xl font-display font-extrabold uppercase text-steel-950 tracking-tight">
                                 03 / Technical Specifications
@@ -166,6 +166,49 @@
                                     <tr class="border-b border-steel-200 last:border-0 hover:bg-steel-50">
                                         <th class="py-4 px-6 font-bold text-steel-900 w-1/3 bg-steel-50 border-r border-steel-200">// {{ str_replace('_', ' ', $key) }}</th>
                                         <td class="py-4 px-6 text-steel-600 font-semibold">{{ $val }}</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    @endif
+
+                    @if($product->variants && is_array($product->variants) && count($product->variants) > 0)
+                    @php
+                        $allSpecKeys = collect($product->variants)
+                            ->flatMap(fn($variant) => array_keys($variant['specifications'] ?? []))
+                            ->unique()
+                            ->values()
+                            ->toArray();
+                    @endphp
+                    <div class="bg-white border border-steel-200 p-8 md:p-12">
+                        <div class="flex justify-between items-center mb-8 border-b border-steel-200 pb-6">
+                            <h3 class="text-xl font-display font-extrabold uppercase text-steel-950 tracking-tight">
+                                04 / Variant Comparison Matrix
+                            </h3>
+                            <span class="font-mono text-xs text-steel-400">[ COMPARISON_MATRIX ]</span>
+                        </div>
+                        
+                        <div class="overflow-x-auto border border-steel-200">
+                            <table class="w-full text-left border-collapse font-mono text-xs">
+                                <thead>
+                                    <tr class="bg-steel-50 border-b border-steel-200">
+                                        <th class="py-4 px-6 font-bold text-steel-900 w-1/3 border-r border-steel-200">// Parameter</th>
+                                        @foreach($product->variants as $variant)
+                                            <th class="py-4 px-6 font-bold text-steel-900 border-r border-steel-200 last:border-r-0">{{ $variant['name'] ?? 'Model' }}</th>
+                                        @endforeach
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($allSpecKeys as $key)
+                                    <tr class="border-b border-steel-200 last:border-0 hover:bg-steel-50">
+                                        <th class="py-4 px-6 font-bold text-steel-900 w-1/3 bg-steel-50/50 border-r border-steel-200">// {{ str_replace('_', ' ', $key) }}</th>
+                                        @foreach($product->variants as $variant)
+                                        <td class="py-4 px-6 text-steel-600 font-semibold border-r border-steel-200 last:border-r-0">
+                                            {{ $variant['specifications'][$key] ?? '-' }}
+                                        </td>
+                                        @endforeach
                                     </tr>
                                     @endforeach
                                 </tbody>
