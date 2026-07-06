@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 
-uses(RefreshDatabase::class, WithoutMiddleware::class);
+uses(RefreshDatabase::class);
 
 beforeEach(function () {
     $this->seed();

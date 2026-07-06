@@ -2,8 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Enums\SettingGroup;
-use App\Models\SiteSetting;
+use App\Models\Setting;
 use Illuminate\Database\Seeder;
 
 class SiteSettingSeeder extends Seeder
@@ -11,46 +10,43 @@ class SiteSettingSeeder extends Seeder
     public function run(): void
     {
         $settings = [
-            ['group' => SettingGroup::General->value, 'key' => 'general.company_name', 'value' => 'DO-RYT Machine Corp', 'type' => 'text'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.tagline', 'value' => 'Engineering Excellence in Industrial Machinery', 'type' => 'text'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.logo', 'value' => 'settings/logo.svg', 'type' => 'image'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.logo_dark', 'value' => 'settings/logo-dark.svg', 'type' => 'image'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.favicon', 'value' => 'settings/favicon.ico', 'type' => 'image'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.footer_text', 'value' => '© 2026 DO-RYT Machine Corp. All Rights Reserved.', 'type' => 'text'],
-            ['group' => SettingGroup::General->value, 'key' => 'general.business_hours', 'value' => 'Mon - Sat: 9:00 AM - 6:00 PM', 'type' => 'text'],
+            // General
+            ['group' => 'general', 'key' => 'site_name', 'value' => 'DO-RYT Machine Corp', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'site_description', 'value' => 'Engineering excellence in industrial processing machinery. Delivering premium quality systems to manufacturers worldwide.', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'primary_color', 'value' => '#27a74a', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'bg_main', 'value' => '#ffffff', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'bg_alt', 'value' => '#f3f4f6', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'text_main', 'value' => '#0f2043', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'text_muted', 'value' => '#6b7280', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'site_logo', 'value' => 'settings/logo.svg', 'type' => 'string'],
+            ['group' => 'general', 'key' => 'favicon', 'value' => 'settings/favicon.ico', 'type' => 'string'],
 
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.phone', 'value' => '+91-XXXXXXXXXX', 'type' => 'text'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.phone_secondary', 'value' => '+91-XXXXXXXXXX', 'type' => 'text'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.email', 'value' => 'info@doryt.com', 'type' => 'text'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.email_sales', 'value' => 'sales@doryt.com', 'type' => 'text'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.address', 'value' => 'Industrial Area, Phase II, Chandigarh, India', 'type' => 'textarea'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.google_maps_embed', 'value' => '', 'type' => 'textarea'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.google_maps_link', 'value' => '', 'type' => 'text'],
-            ['group' => SettingGroup::Contact->value, 'key' => 'contact.whatsapp', 'value' => '+91XXXXXXXXXX', 'type' => 'text'],
+            // Contact
+            ['group' => 'contact', 'key' => 'email', 'value' => 'sales@doryt.com', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'phone', 'value' => '+1 (234) 567-890', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'whatsapp', 'value' => '+1234567890', 'type' => 'string'],
+            ['group' => 'contact', 'key' => 'address', 'value' => "123 Industrial Ave, Block B\nEngineering District, NY 10001", 'type' => 'string'],
 
-            ['group' => SettingGroup::Social->value, 'key' => 'social.facebook', 'value' => 'https://facebook.com/doryt', 'type' => 'text'],
-            ['group' => SettingGroup::Social->value, 'key' => 'social.instagram', 'value' => 'https://instagram.com/doryt', 'type' => 'text'],
-            ['group' => SettingGroup::Social->value, 'key' => 'social.linkedin', 'value' => 'https://linkedin.com/company/doryt', 'type' => 'text'],
-            ['group' => SettingGroup::Social->value, 'key' => 'social.youtube', 'value' => '', 'type' => 'text'],
-            ['group' => SettingGroup::Social->value, 'key' => 'social.twitter', 'value' => '', 'type' => 'text'],
+            // Social
+            ['group' => 'social', 'key' => 'linkedin', 'value' => 'https://linkedin.com/company/doryt', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'facebook', 'value' => 'https://facebook.com/doryt', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'twitter', 'value' => 'https://twitter.com/doryt', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'youtube', 'value' => 'https://youtube.com/c/doryt', 'type' => 'string'],
+            ['group' => 'social', 'key' => 'instagram', 'value' => 'https://instagram.com/doryt', 'type' => 'string'],
 
-            ['group' => SettingGroup::Seo->value, 'key' => 'seo.default_meta_title', 'value' => 'DO-RYT Machine Corp | Industrial Machinery Manufacturer', 'type' => 'text'],
-            ['group' => SettingGroup::Seo->value, 'key' => 'seo.default_meta_description', 'value' => 'Leading manufacturer of freeze dryers, tray dryers, spray dryers, food processing machinery, and industrial equipment.', 'type' => 'textarea'],
-            ['group' => SettingGroup::Seo->value, 'key' => 'seo.default_keywords', 'value' => 'freeze dryer, tray dryer, spray dryer, food processing machinery, industrial equipment, cold storage', 'type' => 'textarea'],
-            ['group' => SettingGroup::Seo->value, 'key' => 'seo.og_image', 'value' => 'settings/og-image.jpg', 'type' => 'image'],
-
-            ['group' => SettingGroup::Analytics->value, 'key' => 'analytics.google_analytics_id', 'value' => '', 'type' => 'text'],
-            ['group' => SettingGroup::Analytics->value, 'key' => 'analytics.google_tag_manager_id', 'value' => '', 'type' => 'text'],
-            ['group' => SettingGroup::Analytics->value, 'key' => 'analytics.facebook_pixel_id', 'value' => '', 'type' => 'text'],
-            ['group' => SettingGroup::Analytics->value, 'key' => 'analytics.header_scripts', 'value' => '', 'type' => 'textarea'],
-            ['group' => SettingGroup::Analytics->value, 'key' => 'analytics.footer_scripts', 'value' => '', 'type' => 'textarea'],
+            // SEO
+            ['group' => 'seo', 'key' => 'meta_title_suffix', 'value' => '| DO-RYT Machine Corp', 'type' => 'string'],
+            ['group' => 'seo', 'key' => 'meta_description', 'value' => 'DO-RYT Machine Corp specializes in high-quality industrial processing machinery, dryers, and complete manufacturing lines.', 'type' => 'string'],
+            ['group' => 'seo', 'key' => 'meta_keywords', 'value' => 'freeze dryer, tray dryer, spray dryer, food processing machinery, industrial equipment, cold storage', 'type' => 'string'],
         ];
 
         foreach ($settings as $setting) {
-            SiteSetting::updateOrCreate(
-                ['key' => $setting['key']],
-                $setting
+            Setting::updateOrCreate(
+                ['group' => $setting['group'], 'key' => $setting['key']],
+                ['value' => $setting['value'], 'type' => $setting['type']]
             );
         }
+
+        Setting::clearCache();
     }
 }

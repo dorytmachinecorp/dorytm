@@ -64,7 +64,8 @@
     </section>
 
     {{-- 4. About DO-RYT (The Heritage) --}}
-    <section class="py-24 md:py-32 bg-white relative">
+    <section class="py-24 md:py-32 bg-white relative"
+             style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
         <x-ui.container>
             <div class="flex flex-col lg:flex-row gap-16 items-center" data-reveal="stagger">
                 <div class="w-full lg:w-1/2 text-steel-900">
@@ -131,7 +132,8 @@
     </section>
 
     {{-- 6. Featured Machines (Flagship Reveal) --}}
-    <section class="py-24 md:py-32 bg-white">
+    <section class="py-24 md:py-32 bg-white relative"
+             style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
         <x-ui.container>
             @if($featuredProducts->isNotEmpty())
             @php $flagship = $featuredProducts->first(); @endphp
@@ -232,7 +234,8 @@
     </section>
 
     {{-- 8. Industries Served (Grid) --}}
-    <section class="py-24 md:py-32 bg-white">
+    <section class="py-24 md:py-32 bg-white relative"
+             style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
         <x-ui.container>
             <div class="text-steel-900 mb-16" data-reveal="fade-up">
                 <span class="font-mono text-[10px] text-primary-600 uppercase tracking-widest block mb-4">[ TARGET FIELDS ]</span>
@@ -303,7 +306,8 @@
     </section>
 
     {{-- 11. Factory Gallery (Blueprint Grid Console) --}}
-    <section class="py-24 bg-white relative">
+    <section class="py-24 bg-white relative"
+             style="background-image: linear-gradient(var(--color-steel-100) 1px, transparent 1px), linear-gradient(90deg, var(--color-steel-100) 1px, transparent 1px); background-size: 40px 40px;">
         <x-ui.container>
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6" data-reveal="fade-up">
                 <div>

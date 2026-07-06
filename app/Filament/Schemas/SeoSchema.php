@@ -2,10 +2,10 @@
 
 namespace App\Filament\Schemas;
 
-use Filament\Forms\Components\Group;
-use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Group;
+use Filament\Schemas\Components\Section;
 
 class SeoSchema
 {

@@ -9,11 +9,11 @@
             </p>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="bg-white dark:bg-steel-800 p-8 rounded-lg shadow-sm border border-slate-200 dark:border-steel-700">
                 <h2 class="text-xl font-mono uppercase text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-steel-700 pb-2">Main Pages</h2>
                 <ul class="space-y-3">
-                    @foreach($urls->whereIn('priority', ['1.0', '0.9', '0.8', '0.7'])->where('changefreq', '!=', 'weekly') as $url)
+                    @foreach($urls->where('type', 'main') as $url)
                         <li>
                             <a href="{{ $url['loc'] }}" class="text-primary-600 dark:text-primary-400 hover:underline">
                                 {{ $url['label'] ?? 'Link' }}
@@ -26,7 +26,7 @@
             <div class="bg-white dark:bg-steel-800 p-8 rounded-lg shadow-sm border border-slate-200 dark:border-steel-700">
                 <h2 class="text-xl font-mono uppercase text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-steel-700 pb-2">Categories & Industries</h2>
                 <ul class="space-y-3">
-                    @foreach($urls->filter(fn($u) => str_contains($u['loc'], '/categories/') || str_contains($u['loc'], '/industries/')) as $url)
+                    @foreach($urls->whereIn('type', ['category', 'industry']) as $url)
                         <li>
                             <a href="{{ $url['loc'] }}" class="text-primary-600 dark:text-primary-400 hover:underline">
                                 {{ $url['label'] ?? 'Link' }}
@@ -39,7 +39,20 @@
             <div class="bg-white dark:bg-steel-800 p-8 rounded-lg shadow-sm border border-slate-200 dark:border-steel-700">
                 <h2 class="text-xl font-mono uppercase text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-steel-700 pb-2">Products</h2>
                 <ul class="space-y-3">
-                    @foreach($urls->filter(fn($u) => str_contains($u['loc'], '/products/')) as $url)
+                    @foreach($urls->where('type', 'product') as $url)
+                        <li>
+                            <a href="{{ $url['loc'] }}" class="text-primary-600 dark:text-primary-400 hover:underline text-sm">
+                                {{ $url['label'] ?? 'Link' }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <div class="bg-white dark:bg-steel-800 p-8 rounded-lg shadow-sm border border-slate-200 dark:border-steel-700">
+                <h2 class="text-xl font-mono uppercase text-slate-900 dark:text-white mb-6 border-b border-slate-200 dark:border-steel-700 pb-2">Blog Posts</h2>
+                <ul class="space-y-3">
+                    @foreach($urls->where('type', 'blog') as $url)
                         <li>
                             <a href="{{ $url['loc'] }}" class="text-primary-600 dark:text-primary-400 hover:underline text-sm">
                                 {{ $url['label'] ?? 'Link' }}

@@ -34,6 +34,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Digital Temperature Control', 'Adjustable Airflow', 'Food-Grade SS Construction', 'Energy-Efficient Heating Elements'],
                 'technical_specifications' => ['Temperature Range' => '30°C – 90°C', 'Capacity' => '50 – 500 kg/batch', 'Power Supply' => '220V – 440V AC'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 1,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -45,6 +55,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Low Operating Cost', 'Closed-Loop Heat Recovery', 'Gentle Low-Temp Drying', 'Preserves Colour & Nutrients'],
                 'technical_specifications' => ['Temperature Range' => '20°C – 60°C', 'Capacity' => '100 – 2000 kg/batch', 'Energy Savings' => 'Up to 50% vs Electric'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 2,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -56,6 +76,16 @@ class ProductSeeder extends Seeder
                 'features' => ['High-Velocity Air Circulation', 'Multi-Stage Plenum Design', 'Uniform Drying Pattern', 'Fuel Options: Diesel / Gas / Electric'],
                 'technical_specifications' => ['Temperature Range' => '40°C – 120°C', 'Air Flow' => '5000 – 50000 CFM', 'Capacity' => '500 – 5000 kg/h'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 3,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -67,6 +97,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Low-Temperature Drying', 'Vacuum Operation (<1 Pa)', 'SS-316L Trays', 'cGMP Compliant Design'],
                 'technical_specifications' => ['Vacuum Level' => '< 1 Pa', 'Temperature Range' => '30°C – 85°C', 'Tray Capacity' => '24 – 288 trays'],
                 'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 4,
                 'image' => 'flagship_machine_1783126168912.png',
             ],
@@ -78,6 +118,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Continuous Operation', 'Internal Lifting Flight Design', 'High Thermal Efficiency', 'Heavy-Duty Construction'],
                 'technical_specifications' => ['Drum Diameter' => '1.0 – 3.5 m', 'Drum Length' => '6 – 30 m', 'Capacity' => '1 – 50 tons/h'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 5,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -89,6 +139,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Multi-Zone Temperature Control', 'Variable Speed Conveyor', 'Recirculating Air System', 'Modular Expandable Design'],
                 'technical_specifications' => ['Belt Width' => '1.0 – 4.0 m', 'Number of Stages' => '3 – 7', 'Capacity' => '200 – 5000 kg/h'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 6,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -100,6 +160,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Sublimation Technology', 'Cascade Refrigeration (-85°C)', 'Siemens PLC / SCADA Control', 'SIP/CIP Automated (Industrial Models)'],
                 'technical_specifications' => ['Shelf Area' => '0.5 – 100 m²', 'Condenser Capacity' => '10 – 1500 kg', 'Vacuum Level' => '< 1 Pa'],
                 'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 7,
                 'image' => 'flagship_machine_1783126168912.png',
             ],
@@ -111,6 +181,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Rotary / Nozzle Atomization', 'Precise Particle Size Control', 'Short Dwell Time', 'FDA / cGMP Compliant Options'],
                 'technical_specifications' => ['Evaporation Rate' => '50 – 5000 kg/h', 'Inlet Temperature' => '150°C – 250°C', 'Outlet Temperature' => '70°C – 110°C'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 8,
                 'image' => 'cat_freeze_dryers_1783126120106.png',
             ],
@@ -122,6 +202,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Individual Product Freezing', 'Ultra-Rapid Freeze Cycle', 'No Clumping / Agglomeration', 'Available in Trolley & Tunnel Configurations'],
                 'technical_specifications' => ['Freezing Temperature' => '-40°C to -80°C', 'Capacity' => '100 – 5000 kg/h', 'Refrigerant' => 'Ammonia / Freon / Cryogenic'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 9,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -135,6 +225,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Integrated Washing to Packaging', 'Hygienic Tubular Frame', 'Variable Speed Drives', 'Easy-Clean Design'],
                 'technical_specifications' => ['Throughput' => '1 – 10 tons/h', 'Water Consumption' => 'Recycled Multi-Stage', 'Power Consumption' => '50 – 200 kW'],
                 'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 10,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -146,6 +246,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Automated Dough Handling', 'Rotary Sheeting & Die-Cutting', 'Continuous Baking / Drying', 'Adjustable Thickness & Diameter'],
                 'technical_specifications' => ['Production Capacity' => '1000 – 10000 pcs/h', 'Product Diameter' => '4 – 12 inches', 'Power Requirement' => '30 – 100 kW'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 11,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -157,6 +267,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Automated Egg Breaking & Separation', 'HTST Pasteurization', 'Spray Drying for Egg Powder', 'CIP Cleaning System'],
                 'technical_specifications' => ['Egg Capacity' => '10000 – 60000 eggs/h', 'Powder Output' => '100 – 1000 kg/h', 'Pasteurization' => 'HTST 66°C / 3.5 min'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 12,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -168,6 +288,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Continuous Frying with Oil Filtration', 'High-Speed Rotary Slicer', 'Automated Seasoning System', 'Energy-Efficient Design'],
                 'technical_specifications' => ['Production Capacity' => '50 – 500 kg/h', 'Frying Temperature' => '150°C – 190°C', 'Oil Filtration' => 'Continuous Automatic'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 13,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -179,6 +309,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Hygienic SS-304 Construction', 'Automated Grinding & Emulsifying', 'Forming & Cooking Stations', 'MAP / Vacuum Packaging Integration'],
                 'technical_specifications' => ['Capacity' => '500 – 5000 kg/h', 'Cutting Temperature' => '< 4°C Controlled', 'Compliance' => 'HACCP / ISO 22000'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 14,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -190,6 +330,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Automatic Grading & Sorting', 'Mechanical Peeling & Deveining', 'IQF Freezing Integration', 'Glazing & Packaging Station'],
                 'technical_specifications' => ['Processing Capacity' => '500 – 3000 kg/h', 'Freezing Temperature' => '-40°C IQF', 'Material' => 'SS-304 / Food-Grade'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 15,
                 'image' => 'cat_food_processing_1783126130193.png',
             ],
@@ -203,6 +353,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Modular PUF Panel Construction', 'Temperature Range: +15°C to -25°C', 'Quick Installation', 'Expandable & Relocatable'],
                 'technical_specifications' => ['Panel Thickness' => '75 – 150 mm', 'Temperature Range' => '+15°C to -25°C', 'Capacity' => '10 – 5000 MT'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 16,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -214,6 +374,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Custom Van Body Fabrication', 'Hermetic Refrigeration Unit', 'Digital Temperature Control', 'GPS Temperature Monitoring'],
                 'technical_specifications' => ['Van Volume' => '5 – 40 cubic meters', 'Temperature Range' => '-20°C to +15°C', 'Insulation' => 'PUF 75 – 100 mm'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 17,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -225,6 +395,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Programmable Environment Control', 'LED Lighting with Spectrum Control', 'Humidity & CO2 Management', 'Data Logging & Remote Monitoring'],
                 'technical_specifications' => ['Temperature Range' => '5°C – 40°C', 'Humidity Range' => '40% – 95% RH', 'Lighting' => 'Full-Spectrum LED'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 18,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -236,6 +416,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Precise Temperature Control', 'Diurnal Cycle Programming', 'Uniform Air Distribution', 'Contamination-Free Interior'],
                 'technical_specifications' => ['Temperature Range' => '5°C – 50°C', 'Humidity' => '50% – 90% RH', 'Lighting' => 'Fluorescent / LED Options'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 19,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -247,6 +437,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Ammonia / Freon Refrigeration', 'Capacity Up to 20,000 MT', 'Multi-Zone Temperature Control', 'WMS Integration Ready'],
                 'technical_specifications' => ['Storage Capacity' => '1,000 – 20,000 MT', 'Temperature Range' => '-25°C to +15°C', 'Refrigeration' => 'Ammonia / Freon'],
                 'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 20,
                 'image' => 'cat_cold_storage_1783126148402.png',
             ],
@@ -260,6 +460,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Adjustable Slice Thickness', 'Multiple Blade Configurations', 'Continuous Feed Operation', 'Easy-Cleaning Design'],
                 'technical_specifications' => ['Slice Thickness' => '0.5 – 50 mm', 'Capacity' => '200 – 3000 kg/h', 'Blade Material' => 'SS-420 / Carbide'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 21,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -271,6 +481,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Cryogenic / Ambient Operation', 'Ultra-Fine Grinding (100+ Mesh)', 'No Heat Generation', 'Liquid Nitrogen Injection System'],
                 'technical_specifications' => ['Fineness' => '100 – 300 Mesh', 'Capacity' => '25 – 500 kg/h', 'Motor Power' => '5 – 50 HP'],
                 'is_featured' => true,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 22,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -282,6 +502,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Interchangeable Blade Sets', 'Dice / Strip / Shred / Chop Modes', 'Continuous High-Volume Feed', 'Safety Interlock System'],
                 'technical_specifications' => ['Cut Size' => '5 – 50 mm', 'Capacity' => '300 – 5000 kg/h', 'Power' => '3 – 25 kW'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 23,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -293,6 +523,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Multi-Deck Screening', 'Quick-Release Clamping', 'Easy Screen Change', 'Low Noise & Vibration'],
                 'technical_specifications' => ['Screen Diameter' => '600 – 1500 mm', 'Number of Decks' => '1 – 5', 'Motor Power' => '0.5 – 3.0 kW'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 24,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -304,6 +544,16 @@ class ProductSeeder extends Seeder
                 'features' => ['VFFS / HFFS Configurations', 'Vacuum & MAP Packaging', 'Multi-Head Weighing Integration', 'Servo-Driven Precision'],
                 'technical_specifications' => ['Packaging Speed' => '30 – 120 packs/min', 'Bag Size' => '50 – 500 mm width', 'Sealing' => 'Heat / Impulse / Vacuum'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 25,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -315,6 +565,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Vacuum Bleaching Vessel', 'Agitated Drying Chamber', 'Automated Process Control', 'SS-304/316L Construction'],
                 'technical_specifications' => ['Batch Capacity' => '500 – 10000 L', 'Temperature Range' => '30°C – 120°C', 'Vacuum Level' => '< 50 mbar'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 26,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -326,6 +586,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Dual Helical Ribbon Agitator', 'Pneumatic / Manual Discharge', 'Liquid Spray Nozzle Option', 'Custom Volume Configurations'],
                 'technical_specifications' => ['Working Volume' => '50 – 5000 L', 'Motor Power' => '2 – 50 kW', 'Material' => 'SS-304 / SS-316'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 27,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],
@@ -337,6 +607,16 @@ class ProductSeeder extends Seeder
                 'features' => ['Custom Fabrication to Specifications', 'SS-304 / SS-316 Construction', 'Hygienic Sanitary Design', 'Adjustable Height Options'],
                 'technical_specifications' => ['Material' => 'SS-304 / SS-316', 'Surface Finish' => '180 – 400 Grit Matte', 'Load Capacity' => 'Up to 500 kg'],
                 'is_featured' => false,
+                'variants' => [
+                    [
+                        'name' => 'Standard Model',
+                        'specifications' => ['Capacity' => 'Standard', 'Power' => '220V', 'Material' => 'SS-304'],
+                    ],
+                    [
+                        'name' => 'Pro Model',
+                        'specifications' => ['Capacity' => 'High', 'Power' => '440V', 'Material' => 'SS-316L'],
+                    ],
+                ],
                 'sort_order' => 28,
                 'image' => 'cat_processing_equip_1783126158752.png',
             ],

@@ -23,11 +23,11 @@
                     <table class="w-full text-left border-collapse font-mono text-xs uppercase tracking-wider">
                         <thead>
                             <tr class="bg-steel-100 border-b border-steel-200 text-steel-900 font-bold">
-                                <th class="py-4 px-6">// Document Title</th>
-                                <th class="py-4 px-6 w-32 hidden md:table-cell">[ Category ]</th>
-                                <th class="py-4 px-6 w-24 hidden sm:table-cell">[ Format ]</th>
-                                <th class="py-4 px-6 w-24 hidden sm:table-cell">[ Size ]</th>
-                                <th class="py-4 px-6 w-32 text-right">Action</th>
+                                <th class="py-4 px-6 whitespace-nowrap">// Document Title</th>
+                                <th class="py-4 px-6 whitespace-nowrap hidden md:table-cell">[ Category ]</th>
+                                <th class="py-4 px-6 whitespace-nowrap hidden sm:table-cell">[ Format ]</th>
+                                <th class="py-4 px-6 whitespace-nowrap hidden sm:table-cell">[ Size ]</th>
+                                <th class="py-4 px-6 whitespace-nowrap text-right">Action</th>
                             </tr>
                         </thead>
                         <tbody>

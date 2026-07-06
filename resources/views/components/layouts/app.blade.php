@@ -36,6 +36,11 @@
         <link rel="icon" type="image/png" href="{{ Storage::disk('public')->url(setting('general.favicon')) }}">
     @endif
 
+    <!-- App Icon -->
+    @if (setting('general.appicon'))
+        <link rel="apple-touch-icon" href="{{ Storage::disk('public')->url(setting('general.appicon')) }}">
+    @endif
+
     @php
         $finalOgImage = $ogImage ?? null;
         if (isset($seo) && $seo?->og_image) {
@@ -133,8 +138,9 @@
 <body class="bg-white text-steel-900 antialiased min-h-screen flex flex-col font-sans">
     <div class="js-loader fixed inset-0 z-[100] bg-steel-900 flex flex-col items-center justify-center">
         <div class="js-loader-logo flex items-center mb-8">
-            @if (setting('general.site_logo'))
-                <img src="{{ Storage::disk('public')->url(setting('general.site_logo')) }}"
+            @php $preloaderLogo = setting('general.preloader') ?: setting('general.site_logo'); @endphp
+            @if ($preloaderLogo)
+                <img src="{{ Storage::disk('public')->url($preloaderLogo) }}"
                     alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-10 w-auto object-contain mr-3">
             @else
                 <div

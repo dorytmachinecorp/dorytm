@@ -6,8 +6,9 @@
             <!-- Brand -->
             <div class="space-y-6">
                 <div class="flex items-center gap-3">
-                    @if(setting('general.site_logo'))
-                        <img src="{{ Storage::disk('public')->url(setting('general.site_logo')) }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-8 w-auto object-contain">
+                    @php $footerLogo = setting('general.footer_logo') ?: setting('general.site_logo'); @endphp
+                    @if($footerLogo)
+                        <img src="{{ Storage::disk('public')->url($footerLogo) }}" alt="{{ setting('general.site_name', 'DO-RYT') }}" class="h-8 w-auto object-contain">
                     @else
                         <div class="w-8 h-8 border border-primary-500 bg-primary-950/50 flex items-center justify-center text-primary-400 font-mono font-bold text-base">
                             {{ substr(setting('general.site_name', 'DO-RYT'), 0, 1) }}
