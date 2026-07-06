@@ -30,6 +30,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->profile(isSimple: false)
             ->brandName(fn () => setting('general.site_name', 'DO-RYT Machine Corp'))
             ->colors(fn () => [
                 'primary' => setting('general.primary_color', '#27a74a'),
