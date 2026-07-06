@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Typography Scale */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Brand Color Palette — Green */
+  --color-primary-50: #f0fdf4;
+  --color-primary-100: #dcfce7;
+  --color-primary-200: #bbf7d0;
+  --color-primary-300: #86efac;
+  --color-primary-400: #4ade80;
+  --color-primary-500: #27a74a;
+  --color-primary-600: #1e8e3e;
+  --color-primary-700: #187532;
+  --color-primary-800: #155d29;
+  --color-primary-900: #114a21;
+  --color-primary-950: #0a2e14;
+
+  /* Steel / Industrial Slate */
+  --color-steel-50: #f8fafc;
+  --color-steel-100: #f1f5f9;
+  --color-steel-200: #e2e8f0;
+  --color-steel-300: #cbd5e1;
+  --color-steel-400: #94a3b8;
+  --color-steel-500: #64748b;
+  --color-steel-600: #475569;
+  --color-steel-700: #334155;
+  --color-steel-800: #1e293b;
+  --color-steel-900: #0f172a;
+  --color-steel-950: #020617;
+  
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-30: 7.5rem;
+}
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --bg-alt: #f3f4f6;
+    --text-main: #0f2043;
+    --text-muted: #6b7280;
+  }
+
+  body {
+    @apply bg-[var(--bg-main)] text-[var(--text-main)] antialiased selection:bg-primary-500 selection:text-white font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+
+  /* Accessible focus states globally */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Custom Animations */
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+    
+    @keyframes slow-pan {
+        0% { transform: scale(1.05) translate(0, 0); }
+        50% { transform: scale(1.1) translate(-1%, -1%); }
+        100% { transform: scale(1.05) translate(0, 0); }
+    }
+    
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
+    }
+    
+    .animate-slow-pan {
+        animation: slow-pan 25s ease-in-out infinite alternate;
+    }
+    
+    .mask-logo {
+        mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    }
+  
+  .glass-header {
+    @apply bg-white/80 backdrop-blur-md border-b border-steel-200/50;
+  }
+}
